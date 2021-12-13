@@ -28,7 +28,7 @@ services:
         ELK_VERSION: $ELK_VERSION
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,z
-      - ./logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro,z
+    #  - ./logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro,z
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,z
     ports:
       - "5044:5044"
