@@ -1,0 +1,2 @@
+- pipeline.id: titanic
+  path.config: "/usr/share/logstash/pipeline/logstash.conf" 
